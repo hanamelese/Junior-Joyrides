@@ -27,8 +27,8 @@
 #Admin-Feature
 #1.User and Event Management:
 
-  Manage user accounts, 
-  create, customize, and schedule events.
+      Manage user accounts, 
+      create, customize, and schedule events.
   
 
 2.Analytics :
