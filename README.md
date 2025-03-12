@@ -11,7 +11,8 @@
 #Junior Joyride is a mobile app that brings joy and celebration to young children in Ethiopia. Users can easily book interviews for their children or order special birthday celebrations at their homes. The app offers fun activities, games, and surprises, making every event unforgettable and filled with laughter and joy 
 
 #User-Feature
-#1.Account Creation and Management:
+
+1.Account Creation and Management:
 
     Create and manage user accounts.
     
@@ -25,6 +26,7 @@
 
     Receive reminders and notifications for upcoming events.
 #Admin-Feature
+
 #1.User and Event Management:
 
       Manage user accounts, 
