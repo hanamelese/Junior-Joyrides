@@ -1,5 +1,7 @@
 package com.example.joyrides.feature_junior.domain.use_case
 
+import com.example.joyrides.feature_junior.domain.model.WishListItem
+import com.example.joyrides.feature_junior.domain.repo.WishListRepo
 import com.example.trial_junior.core.util.UseCasesStrings
 import com.example.trial_junior.feature_junior.domain.model.WishListItem
 import com.example.trial_junior.feature_junior.domain.repo.WishListRepo
