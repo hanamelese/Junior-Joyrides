@@ -1,8 +1,9 @@
 package com.example.joyrides.feature_junior.data.mapper
 
-import com.example.trial_junior.feature_junior.data.local.dto.LocalUserItem
-import com.example.trial_junior.feature_junior.data.remote.dto.RemoteUserItem
-import com.example.trial_junior.feature_junior.domain.model.UserItem
+import com.example.joyrides.feature_junior.data.local.dto.LocalUserItem
+import com.example.joyrides.feature_junior.data.remote.dto.RemoteUserItem
+import com.example.joyrides.feature_junior.domain.model.UserItem
+
 
 
 fun UserItem.toLocalUserItem(id: Int): LocalUserItem {

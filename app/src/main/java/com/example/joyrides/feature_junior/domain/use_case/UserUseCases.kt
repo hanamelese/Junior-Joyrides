@@ -1,7 +1,7 @@
 package com.example.joyrides.feature_junior.domain.use_case
 
-import com.example.trial_junior.feature_junior.domain.model.UserItem
-import com.example.trial_junior.feature_junior.domain.repo.UserListRepo
+import com.example.joyrides.feature_junior.domain.model.UserItem
+import com.example.joyrides.feature_junior.domain.repo.UserListRepo
 import javax.inject.Inject
 
 data class UserUseCases @Inject constructor(
