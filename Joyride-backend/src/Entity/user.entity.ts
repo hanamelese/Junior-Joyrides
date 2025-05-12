@@ -24,6 +24,12 @@ export class UserEntity {
     @Column()
     salt: string;
 
+    @Column()
+    profileImageUrl: string;
+
+    @Column()
+    backgroundImageUrl: string;
+
     @Column({ default: "user" })
     role: string;
 

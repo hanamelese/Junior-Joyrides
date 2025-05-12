@@ -31,6 +31,9 @@ export class SpecialInterviewEntity {
     upcoming: boolean;
 
     @Column()
+    approved: boolean;
+
+    @Column()
     userId: number;
 
     @ManyToOne(() => UserEntity, user => user.specialInterviews)

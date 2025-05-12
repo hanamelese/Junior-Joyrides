@@ -28,6 +28,9 @@ export class WishListEntity {
     upcoming: boolean;
 
     @Column()
+    approved: boolean;
+
+    @Column()
     userId: number;
 
     @ManyToOne(() => UserEntity, user => user.wishLists)

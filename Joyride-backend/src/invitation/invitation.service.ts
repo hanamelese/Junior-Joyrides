@@ -32,6 +32,7 @@ export class InvitationService {
         invitation.date = date;
         invitation.time = time;
         invitation.upcoming = true;
+        invitation.approved = false;
         invitation.userId = userId;
 
         this.repo.create(invitation);

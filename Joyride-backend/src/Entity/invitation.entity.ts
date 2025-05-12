@@ -34,6 +34,9 @@ export class InvitationEntity {
     upcoming: boolean;
 
     @Column()
+    approved: boolean;
+
+    @Column()
     userId: number;
 
     @ManyToOne(() => UserEntity, user => user.invitations)

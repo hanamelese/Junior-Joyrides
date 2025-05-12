@@ -28,6 +28,9 @@ export class BasicInterviewEntity {
     upcoming: boolean;
 
     @Column()
+    approved: boolean;
+
+    @Column()
     userId: number;
 
     @ManyToOne(() => UserEntity, user => user.basicInterviews)
