@@ -1,8 +1,8 @@
 package com.example.joyrides.feature_junior.data.mapper
 
-import com.example.trial_junior.feature_junior.data.local.dto.LocalBasicInterviewItem
-import com.example.trial_junior.feature_junior.data.remote.dto.RemoteBasicInterviewItem
-import com.example.trial_junior.feature_junior.domain.model.BasicInterviewItem
+import com.example.joyrides.feature_junior.data.local.dto.LocalBasicInterviewItem
+import com.example.joyrides.feature_junior.data.remote.dto.RemoteBasicInterviewItem
+import com.example.joyrides.feature_junior.domain.model.BasicInterviewItem
 import kotlin.collections.map
 import kotlin.collections.mapIndexed
 

@@ -50,9 +50,9 @@ import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
-import com.example.trial_junior.feature_junior.presentation.util.Screen
-import com.example.trial_junior.feature_junior.presentation.viewModels.UserUiEvent
-import com.example.trial_junior.feature_junior.presentation.viewModels.UserViewModel
+import com.example.joyrides.feature_junior.presentation.util.Screen
+import com.example.joyrides.feature_junior.presentation.viewModels.UserUiEvent
+import com.example.joyrides.feature_junior.presentation.viewModels.UserViewModel
 import kotlinx.coroutines.flow.collectLatest
 
 @Composable

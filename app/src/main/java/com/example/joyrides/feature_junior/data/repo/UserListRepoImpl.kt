@@ -1,15 +1,15 @@
 package com.example.joyrides.feature_junior.data.repo
 
-import com.example.trial_junior.feature_junior.data.local.UserDao
-import com.example.trial_junior.feature_junior.data.remote.Api
-import com.example.trial_junior.feature_junior.data.TokenManager
-import com.example.trial_junior.feature_junior.data.di.IoDispatcher
-import com.example.trial_junior.feature_junior.data.mapper.toLocalUserItem
-import com.example.trial_junior.feature_junior.data.mapper.toUserItem
-import com.example.trial_junior.feature_junior.data.remote.dto.RegisterRequest
-import com.example.trial_junior.feature_junior.data.remote.dto.UpdateProfileRequest
-import com.example.trial_junior.feature_junior.domain.model.UserItem
-import com.example.trial_junior.feature_junior.domain.repo.UserListRepo
+import com.example.joyrides.feature_junior.data.local.UserDao
+import com.example.joyrides.feature_junior.data.remote.Api
+import com.example.joyrides.feature_junior.data.TokenManager
+import com.example.joyrides.feature_junior.data.di.IoDispatcher
+import com.example.joyrides.feature_junior.data.mapper.toLocalUserItem
+import com.example.joyrides.feature_junior.data.mapper.toUserItem
+import com.example.joyrides.feature_junior.data.remote.dto.RegisterRequest
+import com.example.joyrides.feature_junior.data.remote.dto.UpdateProfileRequest
+import com.example.joyrides.feature_junior.domain.model.UserItem
+import com.example.joyrides.feature_junior.domain.repo.UserListRepo
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
 import javax.inject.Inject

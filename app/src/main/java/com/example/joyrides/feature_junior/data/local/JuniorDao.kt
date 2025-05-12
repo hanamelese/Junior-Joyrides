@@ -5,11 +5,11 @@ import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
-import com.example.trial_junior.feature_junior.data.local.dto.LocalBasicInterviewItem
-import com.example.trial_junior.feature_junior.data.local.dto.LocalInvitationItem
-import com.example.trial_junior.feature_junior.data.local.dto.LocalSpecialInterviewItem
-import com.example.trial_junior.feature_junior.data.local.dto.LocalUserItem
-import com.example.trial_junior.feature_junior.data.local.dto.LocalWishListItem
+import com.example.joyrides.feature_junior.data.local.dto.LocalBasicInterviewItem
+import com.example.joyrides.feature_junior.data.local.dto.LocalInvitationItem
+import com.example.joyrides.feature_junior.data.local.dto.LocalSpecialInterviewItem
+import com.example.joyrides.feature_junior.data.local.dto.LocalUserItem
+import com.example.joyrides.feature_junior.data.local.dto.LocalWishListItem
 
 
 @Dao

@@ -184,8 +184,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import coil.compose.AsyncImage
-import coil.request.ImageRequest
+
 import com.example.joyrides.feature_junior.presentation.components.WeekNavigator
 import com.example.joyrides.feature_junior.presentation.viewModels.InvitationListViewModel
 import com.example.joyrides.feature_junior.presentation.viewModels.WishListViewModel

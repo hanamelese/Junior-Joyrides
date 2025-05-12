@@ -1,4 +1,4 @@
-package com.example.trial_junior.feature_junior.data.di
+package com.example.joyrides.feature_junior.data.di
 
 import dagger.Module
 import dagger.Provides

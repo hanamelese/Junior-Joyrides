@@ -37,21 +37,21 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.trial_junior.feature_junior.presentation.components.AppBottomNavigation
-import com.example.trial_junior.feature_junior.presentation.components.BarGraph
-import com.example.trial_junior.feature_junior.presentation.components.HalfScreenMenu
-import com.example.trial_junior.feature_junior.presentation.components.SharedDashboardComponents
-import com.example.trial_junior.feature_junior.presentation.components.StatisticCards
-import com.example.trial_junior.feature_junior.presentation.viewModels.BasicInterviewListViewModel
-import com.example.trial_junior.feature_junior.presentation.viewModels.InvitationListViewModel
 import com.example.trial_junior.feature_junior.presentation.viewModels.SpecialInterviewListViewModel
-import com.example.trial_junior.feature_junior.presentation.viewModels.WishListViewModel
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material3.Divider
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.joyrides.feature_junior.presentation.component.AppBottomNavigation
+import com.example.joyrides.feature_junior.presentation.component.BarGraph
+import com.example.joyrides.feature_junior.presentation.component.HalfScreenMenu
+import com.example.joyrides.feature_junior.presentation.component.SharedDashboardComponents
+import com.example.joyrides.feature_junior.presentation.component.StatisticCards
+import com.example.joyrides.feature_junior.presentation.viewModels.BasicInterviewListViewModel
+import com.example.joyrides.feature_junior.presentation.viewModels.InvitationListViewModel
+import com.example.joyrides.feature_junior.presentation.viewModels.WishListViewModel
 
 @Composable
 fun AdminDashboardScreen(
@@ -138,7 +138,7 @@ fun AdminDashboardScreen(
                             .padding(0.dp)
                     )
                     // Reintroduce SharedDashboardComponents for "Admin Dashboard" and time range selector
-                    SharedDashboardComponents(
+                    SharedDashboardComponents (
                         onTimeRangeSelected = { range ->
                             // Handle time range selection if needed
                         }
@@ -229,7 +229,7 @@ fun AdminDashboardScreen(
 
         // Side Menu (higher z-index to overlay everything)
         if (isMenuOpen) {
-            HalfScreenMenu(
+            HalfScreenMenu (
                 navController = navController,
                 isMenuOpen = remember { mutableStateOf(isMenuOpen) },
                 modifier = Modifier.zIndex(2f),

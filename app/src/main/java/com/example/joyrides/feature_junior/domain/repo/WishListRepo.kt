@@ -1,6 +1,6 @@
 package com.example.joyrides.feature_junior.domain.repo
 
-import com.example.trial_junior.feature_junior.domain.model.WishListItem
+import com.example.joyrides.feature_junior.domain.model.WishListItem
 
 interface WishListRepo {
     suspend fun getAllWishListItems(): List<WishListItem>

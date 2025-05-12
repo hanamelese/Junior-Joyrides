@@ -1,8 +1,8 @@
 package com.example.joyrides.feature_junior.data.mapper
 
-import com.example.trial_junior.feature_junior.data.local.dto.LocalWishListItem
-import com.example.trial_junior.feature_junior.data.remote.dto.RemoteWishListItem
-import com.example.trial_junior.feature_junior.domain.model.WishListItem
+import com.example.joyrides.feature_junior.data.local.dto.LocalWishListItem
+import com.example.joyrides.feature_junior.data.remote.dto.RemoteWishListItem
+import com.example.joyrides.feature_junior.domain.model.WishListItem
 
 fun WishListItem.toLocalWishListItem(id: Int): LocalWishListItem {
     return LocalWishListItem(

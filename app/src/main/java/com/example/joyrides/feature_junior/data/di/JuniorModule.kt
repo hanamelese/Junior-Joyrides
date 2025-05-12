@@ -1,25 +1,27 @@
-package com.example.trial_junior.feature_junior.data.di
+package com.example.joyrides.feature_junior.data.di
 
 import android.content.Context
 import androidx.room.Room
-import com.example.trial_junior.feature_junior.data.TokenManager
-import com.example.trial_junior.feature_junior.data.local.InvitationDao
-import com.example.trial_junior.feature_junior.data.local.JuniorDatabase
-import com.example.trial_junior.feature_junior.data.local.BasicInterviewDao
-import com.example.trial_junior.feature_junior.data.local.SpecialInterviewDao
-import com.example.trial_junior.feature_junior.data.local.UserDao
-import com.example.trial_junior.feature_junior.data.local.WishListDao
-import com.example.trial_junior.feature_junior.data.remote.Api
-import com.example.trial_junior.feature_junior.data.repo.BasicInterviewListRepoImpl
-import com.example.trial_junior.feature_junior.data.repo.InvitationListRepoImpl
-import com.example.trial_junior.feature_junior.data.repo.SpecialInterviewListRepoImpl
-import com.example.trial_junior.feature_junior.data.repo.UserListRepoImpl
-import com.example.trial_junior.feature_junior.data.repo.WishListRepoImpl
-import com.example.trial_junior.feature_junior.domain.repo.BasicInterviewListRepo
-import com.example.trial_junior.feature_junior.domain.repo.InvitationListRepo
-import com.example.trial_junior.feature_junior.domain.repo.SpecialInterviewListRepo
-import com.example.trial_junior.feature_junior.domain.repo.UserListRepo
-import com.example.trial_junior.feature_junior.domain.repo.WishListRepo
+import com.example.joyrides.feature_junior.data.TokenManager
+import com.example.joyrides.feature_junior.data.local.BasicInterviewDao
+import com.example.joyrides.feature_junior.data.local.InvitationDao
+import com.example.joyrides.feature_junior.data.local.JuniorDatabase
+import com.example.joyrides.feature_junior.data.local.SpecialInterviewDao
+import com.example.joyrides.feature_junior.data.local.UserDao
+import com.example.joyrides.feature_junior.data.local.WishListDao
+import com.example.joyrides.feature_junior.data.remote.Api
+import com.example.joyrides.feature_junior.data.repo.BasicInterviewListRepoImpl
+import com.example.joyrides.feature_junior.data.repo.InvitationListRepoImpl
+import com.example.joyrides.feature_junior.data.repo.UserListRepoImpl
+import com.example.joyrides.feature_junior.data.repo.WishListRepoImpl
+import com.example.joyrides.feature_junior.domain.repo.BasicInterviewListRepo
+import com.example.joyrides.feature_junior.domain.repo.InvitationListRepo
+import com.example.joyrides.feature_junior.domain.repo.UserListRepo
+import com.example.joyrides.feature_junior.domain.repo.WishListRepo
+import com.example.joyrides.feature_junior.data.repo.SpecialInterviewListRepoImpl
+
+import com.example.joyrides.feature_junior.domain.repo.SpecialInterviewListRepo
+
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

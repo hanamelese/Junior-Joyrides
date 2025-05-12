@@ -1,6 +1,6 @@
 package com.example.joyrides.feature_junior.domain.model
 
-import com.example.trial_junior.feature_junior.domain.model.ListItem
+import com.example.joyrides.feature_junior.domain.model.ListItem
 
 data class WishListItem(
     val childName: String,

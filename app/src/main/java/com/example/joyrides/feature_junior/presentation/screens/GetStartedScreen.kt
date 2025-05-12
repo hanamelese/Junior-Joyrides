@@ -8,7 +8,6 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.ColumnScope.weight
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -50,8 +49,7 @@ import androidx.navigation.NavHostController
 import com.google.accompanist.pager.ExperimentalPagerApi
 import kotlinx.coroutines.launch
 import com.google.accompanist.pager.*
-import com.example.trial_junior.R
-import com.example.trial_junior.feature_junior.presentation.util.Screen
+import com.example.joyrides.feature_junior.presentation.util.Screen
 import kotlinx.coroutines.launch
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -186,147 +184,3 @@ fun GetStartedScreen(navController: NavHostController) {
 
 
 
-
-//@Composable
-//fun GetStartedScreen(navController: NavHostController) {
-//    val brandColor = Color(0xFFC5AE3D)
-//    var currentPage by remember { mutableIntStateOf(0) }
-//    val numberOfPages = 3
-//    val backgroundImages = listOf(
-//        R.drawable.img_12,
-//        R.drawable.img_9,
-//        R.drawable.img_10
-//    )
-//    val contentDescriptions = listOf(
-//        "Book interviews for children",
-//        "Order special birthday celebrations",
-//        "Enjoy fun activities and surprises"
-//    )
-//    val titles = listOf(
-//        "Book Interviews",
-//        "Celebrate Birthdays",
-//        "Fun & Surprises"
-//    )
-//    val descriptions = listOf(
-//        "Easily schedule interviews for your little ones with just a few taps. Connect with the right people to nurture their growth.",
-//        "Make your child's birthday unforgettable! Order personalized celebrations delivered right to your doorstep.",
-//        "Discover a world of fun activities, engaging games, and delightful surprises to make every moment special."
-//    )
-//
-//    Box(
-//        modifier = Modifier
-//            .fillMaxSize()
-//            .background(Brush.verticalGradient(listOf(Color(0xFF3D3D3D), Color(0xFF252525))))
-//    ) {
-//        Image(
-//            painter = painterResource(id = backgroundImages[currentPage]),
-//            contentDescription = contentDescriptions[currentPage],
-//            modifier = Modifier.fillMaxSize()
-//                .alpha(0.8f),
-//            contentScale = ContentScale.Crop
-//        )
-//        Box(
-//            modifier = Modifier
-//                .fillMaxSize()
-//                .background(Color.Black.copy(alpha = 0.2f))
-//        )
-//
-//        Column(
-//            modifier = Modifier
-//                .fillMaxSize()
-//                .padding(horizontal = 24.dp, vertical = 48.dp),
-//            horizontalAlignment = Alignment.CenterHorizontally,
-//            verticalArrangement = Arrangement.Bottom
-//        ) {
-//            Text(
-//                text = titles[currentPage],
-//                style = TextStyle(
-//                    fontSize = 24.sp,
-//                    fontWeight = FontWeight.Bold,
-//                    color = Color.White,
-//                    textAlign = TextAlign.Center
-//                ),
-//                modifier = Modifier.padding(bottom = 8.dp)
-//            )
-//            Text(
-//                text = descriptions[currentPage],
-//                style = TextStyle(
-//                    fontSize = 16.sp,
-//                    color = Color.White.copy(alpha = 0.8f),
-//                    textAlign = TextAlign.Center,
-//                    lineHeight = 24.sp
-//                ),
-//                modifier = Modifier.padding(bottom = 32.dp)
-//            )
-//
-//            Button(
-//                onClick = { navController.navigate(Screen.SignupScreen.route) },
-//                colors = ButtonDefaults.buttonColors(containerColor = brandColor),
-//                modifier = Modifier
-//                    .fillMaxWidth()
-//                    .height(56.dp)
-//                    .clip(RoundedCornerShape(16.dp)),
-//                elevation = ButtonDefaults.buttonElevation(
-//                    defaultElevation = 4.dp,
-//                    pressedElevation = 8.dp
-//                )
-//            ) {
-//                Text(
-//                    text = "Get Started",
-//                    fontSize = 18.sp,
-//                    color = Color.White,
-//                    fontWeight = FontWeight.SemiBold
-//                )
-//            }
-//
-//            Spacer(modifier = Modifier.height(16.dp))
-//
-//            TextButton(onClick = { navController.navigate("learnMore") }) {
-//                Text(
-//                    "Learn More",
-//                    color = brandColor,
-//                    fontSize = 16.sp,
-//                    fontWeight = FontWeight.Medium,
-//                    textDecoration = TextDecoration.Underline
-//                )
-//            }
-//
-//            Spacer(modifier = Modifier.height(24.dp))
-//
-//            Row(
-//                modifier = Modifier.fillMaxWidth(),
-//                horizontalArrangement = Arrangement.Center
-//            ) {
-//                repeat(numberOfPages) { index ->
-//                    val isSelected = index == currentPage
-//                    Canvas(
-//                        modifier = Modifier
-//                            .size(12.dp)
-//                            .clickable { currentPage = index }
-//                    ) {
-//                        drawCircle(
-//                            color = if (isSelected) brandColor else brandColor.copy(alpha = 0.5f) // Highlight current page
-//                        )
-//                    }
-//                    if (index < numberOfPages - 1) {
-//                        Spacer(modifier = Modifier.size(8.dp))
-//                    }
-//                }
-//            }
-//        }
-//
-//        Box(
-//            modifier = Modifier
-//                .fillMaxWidth()
-//                .align(Alignment.BottomCenter)
-//                .padding(bottom = 16.dp),
-//            contentAlignment = Alignment.Center
-//        ) {
-//            Text(
-//                text = "Junior Joyride",
-//                color = Color.White.copy(alpha = 0.7f),
-//                fontSize = 14.sp
-//            )
-//        }
-//    }
-//}

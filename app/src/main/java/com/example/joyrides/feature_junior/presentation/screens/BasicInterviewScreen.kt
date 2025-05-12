@@ -5,8 +5,6 @@ import android.widget.Toast
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.layout.ColumnScope.align
-import androidx.compose.foundation.layout.RowScope.weight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
@@ -34,10 +32,6 @@ import com.example.joyrides.feature_junior.presentation.component.AppBottomNavig
 import com.example.joyrides.feature_junior.presentation.component.HalfScreenMenu
 import com.example.joyrides.feature_junior.presentation.component.HintInputField
 import com.example.joyrides.feature_junior.presentation.util.Screen
-import com.example.trial_junior.feature_junior.presentation.components.AppBottomNavigation
-import com.example.trial_junior.feature_junior.presentation.components.HintInputField
-import com.example.trial_junior.feature_junior.presentation.components.HalfScreenMenu
-import com.example.trial_junior.feature_junior.presentation.util.Screen
 import com.example.trial_junior.feature_junior.presentation.viewModels.BasicInterview_Update.BasicInterviewNewUpdateEvent
 import com.example.trial_junior.feature_junior.presentation.viewModels.BasicInterview_Update.BasicInterviewNewUpdateViewModel
 import kotlinx.coroutines.flow.collectLatest

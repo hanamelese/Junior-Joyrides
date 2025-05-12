@@ -1,6 +1,6 @@
 package com.example.joyrides.feature_junior.domain.repo
 
-import com.example.trial_junior.feature_junior.domain.model.UserItem
+import com.example.joyrides.feature_junior.domain.model.UserItem
 
 interface UserListRepo {
     suspend fun registerUser(firstName: String, lastName: String, email: String, password: String): UserItem

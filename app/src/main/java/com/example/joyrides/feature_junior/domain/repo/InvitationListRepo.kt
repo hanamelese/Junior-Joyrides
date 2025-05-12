@@ -1,6 +1,6 @@
 package com.example.joyrides.feature_junior.domain.repo
 
-import com.example.trial_junior.feature_junior.domain.model.InvitationItem
+import com.example.joyrides.feature_junior.domain.model.InvitationItem
 
 interface InvitationListRepo {
     suspend fun getAllInvitations(): List<InvitationItem>

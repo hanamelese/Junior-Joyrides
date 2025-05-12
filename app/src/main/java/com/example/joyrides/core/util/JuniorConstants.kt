@@ -1,4 +1,4 @@
-package com.example.trial_junior.core.util
+package com.example.joyrides.core.util
 
 object UseCasesStrings {
     const val EMPTY_FIELDS= "All the fields must be populated."

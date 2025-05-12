@@ -1,16 +1,16 @@
 package com.example.joyrides.feature_junior.data.repo
 
 import android.util.Log
-import com.example.trial_junior.feature_junior.data.di.IoDispatcher
-import com.example.trial_junior.feature_junior.data.local.WishListDao
-import com.example.trial_junior.feature_junior.data.mapper.toLocalWishListItem
-import com.example.trial_junior.feature_junior.data.mapper.toLocalWishListItemListFromRemote
-import com.example.trial_junior.feature_junior.data.mapper.toRemoteWishListItem
-import com.example.trial_junior.feature_junior.data.mapper.toWishListItem
-import com.example.trial_junior.feature_junior.data.mapper.toWishListItemListFromLocal
-import com.example.trial_junior.feature_junior.data.remote.Api
-import com.example.trial_junior.feature_junior.domain.model.WishListItem
-import com.example.trial_junior.feature_junior.domain.repo.WishListRepo
+import com.example.joyrides.feature_junior.data.di.IoDispatcher
+import com.example.joyrides.feature_junior.data.local.WishListDao
+import com.example.joyrides.feature_junior.data.mapper.toLocalWishListItem
+import com.example.joyrides.feature_junior.data.mapper.toLocalWishListItemListFromRemote
+import com.example.joyrides.feature_junior.data.mapper.toRemoteWishListItem
+import com.example.joyrides.feature_junior.data.mapper.toWishListItem
+import com.example.joyrides.feature_junior.data.mapper.toWishListItemListFromLocal
+import com.example.joyrides.feature_junior.data.remote.Api
+import com.example.joyrides.feature_junior.domain.model.WishListItem
+import com.example.joyrides.feature_junior.domain.repo.WishListRepo
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
 import retrofit2.HttpException

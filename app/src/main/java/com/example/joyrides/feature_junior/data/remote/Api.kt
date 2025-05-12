@@ -1,12 +1,12 @@
 package com.example.joyrides.feature_junior.data.remote
 
-import com.example.trial_junior.feature_junior.data.remote.dto.RegisterRequest
-import com.example.trial_junior.feature_junior.data.remote.dto.RemoteBasicInterviewItem
-import com.example.trial_junior.feature_junior.data.remote.dto.RemoteInvitationItem
-import com.example.trial_junior.feature_junior.data.remote.dto.RemoteSpecialInterviewItem
-import com.example.trial_junior.feature_junior.data.remote.dto.RemoteUserItem
-import com.example.trial_junior.feature_junior.data.remote.dto.RemoteWishListItem
-import com.example.trial_junior.feature_junior.data.remote.dto.UpdateProfileRequest
+import com.example.joyrides.feature_junior.data.remote.dto.RegisterRequest
+import com.example.joyrides.feature_junior.data.remote.dto.RemoteBasicInterviewItem
+import com.example.joyrides.feature_junior.data.remote.dto.RemoteInvitationItem
+import com.example.joyrides.feature_junior.data.remote.dto.RemoteSpecialInterviewItem
+import com.example.joyrides.feature_junior.data.remote.dto.RemoteUserItem
+import com.example.joyrides.feature_junior.data.remote.dto.RemoteWishListItem
+import com.example.joyrides.feature_junior.data.remote.dto.UpdateProfileRequest
 import retrofit2.Response
 import retrofit2.http.Body
 import retrofit2.http.DELETE

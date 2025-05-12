@@ -1,10 +1,12 @@
 package com.example.joyrides.feature_junior.domain.use_case
 
-import com.example.trial_junior.core.util.UseCasesStrings
-import com.example.trial_junior.feature_junior.domain.model.BasicInterviewItem
-import com.example.trial_junior.feature_junior.domain.repo.BasicInterviewListRepo
-import com.example.trial_junior.feature_junior.domain.util.InvalidInvitationItemException
-import com.example.trial_junior.feature_junior.domain.util.SortingDirection
+
+import com.example.joyrides.core.util.UseCasesStrings
+import com.example.joyrides.feature_junior.domain.model.BasicInterviewItem
+import com.example.joyrides.feature_junior.domain.repo.BasicInterviewListRepo
+import com.example.joyrides.feature_junior.domain.util.InvalidInvitationItemException
+
+
 import javax.inject.Inject
 import kotlin.collections.filter
 import kotlin.text.isBlank

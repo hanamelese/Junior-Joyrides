@@ -1,16 +1,16 @@
 package com.example.joyrides.feature_junior.data.repo
 
 import android.util.Log
-import com.example.trial_junior.feature_junior.data.di.IoDispatcher
-import com.example.trial_junior.feature_junior.data.local.BasicInterviewDao
-import com.example.trial_junior.feature_junior.data.mapper.toBasicInterviewItem
-import com.example.trial_junior.feature_junior.data.mapper.toBasicInterviewItemListFromLocal
-import com.example.trial_junior.feature_junior.data.mapper.toLocalBasicInterviewItem
-import com.example.trial_junior.feature_junior.data.mapper.toLocalBasicInterviewItemListFromRemote
-import com.example.trial_junior.feature_junior.data.mapper.toRemoteBasicInterviewItem
-import com.example.trial_junior.feature_junior.data.remote.Api
-import com.example.trial_junior.feature_junior.domain.model.BasicInterviewItem
-import com.example.trial_junior.feature_junior.domain.repo.BasicInterviewListRepo
+import com.example.joyrides.feature_junior.data.di.IoDispatcher
+import com.example.joyrides.feature_junior.data.local.BasicInterviewDao
+import com.example.joyrides.feature_junior.data.mapper.toBasicInterviewItem
+import com.example.joyrides.feature_junior.data.mapper.toBasicInterviewItemListFromLocal
+import com.example.joyrides.feature_junior.data.mapper.toLocalBasicInterviewItem
+import com.example.joyrides.feature_junior.data.mapper.toLocalBasicInterviewItemListFromRemote
+import com.example.joyrides.feature_junior.data.mapper.toRemoteBasicInterviewItem
+import com.example.joyrides.feature_junior.data.remote.Api
+import com.example.joyrides.feature_junior.domain.model.BasicInterviewItem
+import com.example.joyrides.feature_junior.domain.repo.BasicInterviewListRepo
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.withContext
 import retrofit2.HttpException
