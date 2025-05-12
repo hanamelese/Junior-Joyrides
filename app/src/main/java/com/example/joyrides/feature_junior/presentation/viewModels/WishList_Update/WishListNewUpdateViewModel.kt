@@ -1,4 +1,4 @@
-package com.example.trial_junior.feature_junior.presentation.viewModels.WishList_Update
+package com.example.joyrides.feature_junior.presentation.viewModels.WishList_Update
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
@@ -6,8 +6,8 @@ import androidx.compose.ui.focus.FocusState
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.trial_junior.feature_junior.data.di.IoDispatcher
-import com.example.trial_junior.feature_junior.domain.use_case.WishListUseCases
+import com.example.joyrides.feature_junior.data.di.IoDispatcher
+import com.example.joyrides.feature_junior.domain.use_case.WishListUseCases
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.CoroutineExceptionHandler

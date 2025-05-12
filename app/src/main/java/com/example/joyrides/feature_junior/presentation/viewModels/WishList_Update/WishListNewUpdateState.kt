@@ -1,6 +1,6 @@
-package com.example.trial_junior.feature_junior.presentation.viewModels.WishList_Update
+package com.example.joyrides.feature_junior.presentation.viewModels.WishList_Update
 
-import com.example.trial_junior.feature_junior.domain.model.WishListItem
+import com.example.joyrides.feature_junior.domain.model.WishListItem
 import kotlin.String
 
 data class WishListNewUpdateState(
