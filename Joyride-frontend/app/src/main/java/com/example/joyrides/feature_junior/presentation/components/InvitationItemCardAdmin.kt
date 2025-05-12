@@ -1,4 +1,4 @@
-package com.example.joyrides.feature_junior.presentation.component
+package com.example.joyrides.feature_junior.presentation.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -35,7 +35,8 @@ import com.example.joyrides.feature_junior.domain.model.InvitationItem
 import com.example.trial_junior.core.presentation.components.DeleteButton
 import com.example.trial_junior.core.presentation.components.EditButton
 import com.example.trial_junior.core.presentation.components.HostedButton
-import com.example.trial_junior.ui.theme.TrialJuniorTheme
+import com.example.trial_junior.ui.theme.JoyridesTheme
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -173,7 +174,7 @@ fun InvitationItemCardAdmin(
 @Preview
 @Composable
 fun InvitationItemCardAdminPreview() {
-    TrialJuniorTheme {
+    JoyridesTheme {
         InvitationItemCardAdmin(
             invitation = InvitationItem(
                 childName = "Meba",

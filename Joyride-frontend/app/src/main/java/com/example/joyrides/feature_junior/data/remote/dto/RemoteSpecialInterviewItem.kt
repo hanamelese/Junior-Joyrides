@@ -1,4 +1,4 @@
-package com.example.trial_junior.feature_junior.data.remote.dto
+package com.example.joyrides.feature_junior.data.remote.dto
 
 data class RemoteSpecialInterviewItem(
     val childName: String,

@@ -1,4 +1,4 @@
-package com.example.joyrides.feature_junior.presentation.component
+package com.example.joyrides.feature_junior.presentation.components
 
 
 import androidx.compose.foundation.background

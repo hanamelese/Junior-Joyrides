@@ -5,12 +5,7 @@ import android.widget.Toast
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
-import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.LazyListScope
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.*
@@ -25,20 +20,15 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.KeyboardType
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
-import com.example.joyrides.feature_junior.presentation.component.AppBottomNavigation
-import com.example.joyrides.feature_junior.presentation.component.HalfScreenMenu
-import com.example.joyrides.feature_junior.presentation.component.HintInputField
+import com.example.joyrides.feature_junior.presentation.components.AppBottomNavigation
+import com.example.joyrides.feature_junior.presentation.components.HalfScreenMenu
+import com.example.joyrides.feature_junior.presentation.components.HintInputField
 import com.example.joyrides.feature_junior.presentation.util.Screen
 import com.example.trial_junior.feature_junior.presentation.viewModels.BasicInterview_Update.BasicInterviewNewUpdateEvent
+
 import com.example.trial_junior.feature_junior.presentation.viewModels.BasicInterview_Update.BasicInterviewNewUpdateViewModel
 import kotlinx.coroutines.flow.collectLatest
-import kotlin.let
-import kotlin.takeIf
-import kotlin.text.toIntOrNull
-import kotlin.text.toLongOrNull
 
 @Composable
 fun BasicInterviewScreen(navController: NavHostController, viewModel: BasicInterviewNewUpdateViewModel = hiltViewModel()) {
@@ -55,15 +45,12 @@ fun BasicInterviewScreen(navController: NavHostController, viewModel: BasicInter
                     Log.d(TAG, "Event: Back triggered")
                     navController.navigateUp()
                 }
-
                 BasicInterviewNewUpdateViewModel.UiEvent.SaveBasicInterview -> {
                     Log.d(TAG, "Event: SaveBasicInterview triggered")
                     snackbarHostState.showSnackbar("Successfully submitted!")
-                    Toast.makeText(navController.context, "Interview saved!", Toast.LENGTH_SHORT)
-                        .show()
+                    Toast.makeText(navController.context, "Interview saved!", Toast.LENGTH_SHORT).show()
                     navController.navigateUp()
                 }
-
                 is BasicInterviewNewUpdateViewModel.UiEvent.ShowSnackbar -> {
                     Log.d(TAG, "Event: ShowSnackbar triggered with message: ${event.message}")
                     snackbarHostState.showSnackbar("Submission failed: ${event.message}")
@@ -196,7 +183,7 @@ fun BasicInterview(viewModel: BasicInterviewNewUpdateViewModel, snackbarHostStat
             .padding(horizontal = 16.dp, vertical = 8.dp)
             .padding(bottom = 30.dp) // Adjust based on AppBottomNavigation height
     ) {
-        LazyListScope.item {
+        item {
             Text(
                 modifier = Modifier.padding(bottom = itemSpacing).fillMaxWidth(),
                 color = Color.Black,
@@ -206,7 +193,7 @@ fun BasicInterview(viewModel: BasicInterviewNewUpdateViewModel, snackbarHostStat
             )
         }
 
-        LazyListScope.item {
+        item {
             HintInputField(
                 value = state.basicInterview.childName,
                 hint = "Child's Name",
@@ -214,18 +201,12 @@ fun BasicInterview(viewModel: BasicInterviewNewUpdateViewModel, snackbarHostStat
                     Log.d(TAG, "Child's Name updated to: $newValue")
                     viewModel.onEvent(BasicInterviewNewUpdateEvent.EnteredChildName(newValue))
                 },
-                onFocusChange = {
-                    viewModel.onEvent(
-                        BasicInterviewNewUpdateEvent.ChangedChildNameFocus(
-                            it
-                        )
-                    )
-                }
+                onFocusChange = { viewModel.onEvent(BasicInterviewNewUpdateEvent.ChangedChildNameFocus(it)) }
             )
             Spacer(Modifier.height(itemSpacing))
         }
 
-        LazyListScope.item {
+        item {
             HintInputField(
                 value = state.basicInterview.age.takeIf { it > 0 }?.toString() ?: "",
                 hint = "Age",
@@ -241,7 +222,7 @@ fun BasicInterview(viewModel: BasicInterviewNewUpdateViewModel, snackbarHostStat
             Spacer(Modifier.height(itemSpacing))
         }
 
-        LazyListScope.item {
+        item {
             HintInputField(
                 value = state.basicInterview.guardianName,
                 hint = "Guardian Name",
@@ -249,18 +230,12 @@ fun BasicInterview(viewModel: BasicInterviewNewUpdateViewModel, snackbarHostStat
                     Log.d(TAG, "Guardian Name updated to: $newValue")
                     viewModel.onEvent(BasicInterviewNewUpdateEvent.EnteredGuardianName(newValue))
                 },
-                onFocusChange = {
-                    viewModel.onEvent(
-                        BasicInterviewNewUpdateEvent.ChangedGuardianNameFocus(
-                            it
-                        )
-                    )
-                }
+                onFocusChange = { viewModel.onEvent(BasicInterviewNewUpdateEvent.ChangedGuardianNameFocus(it)) }
             )
             Spacer(Modifier.height(itemSpacing))
         }
 
-        LazyListScope.item {
+        item {
             HintInputField(
                 value = state.basicInterview.guardianEmail,
                 hint = "Guardian's Email",
@@ -269,18 +244,12 @@ fun BasicInterview(viewModel: BasicInterviewNewUpdateViewModel, snackbarHostStat
                     Log.d(TAG, "Guardian Email updated to: $newValue")
                     viewModel.onEvent(BasicInterviewNewUpdateEvent.EnteredGuardianEmail(newValue))
                 },
-                onFocusChange = {
-                    viewModel.onEvent(
-                        BasicInterviewNewUpdateEvent.ChangedGuardianEmailFocus(
-                            it
-                        )
-                    )
-                }
+                onFocusChange = { viewModel.onEvent(BasicInterviewNewUpdateEvent.ChangedGuardianEmailFocus(it)) }
             )
             Spacer(Modifier.height(itemSpacing))
         }
 
-        LazyListScope.item {
+        item {
             HintInputField(
                 value = if (state.basicInterview.guardianPhone > 0) state.basicInterview.guardianPhone.toString() else "",
                 hint = "Phone Number",
@@ -291,18 +260,12 @@ fun BasicInterview(viewModel: BasicInterviewNewUpdateViewModel, snackbarHostStat
                         viewModel.onEvent(BasicInterviewNewUpdateEvent.EnteredGuardianPhone(phone))
                     }
                 },
-                onFocusChange = {
-                    viewModel.onEvent(
-                        BasicInterviewNewUpdateEvent.ChangedGuardianPhoneFocus(
-                            it
-                        )
-                    )
-                }
+                onFocusChange = { viewModel.onEvent(BasicInterviewNewUpdateEvent.ChangedGuardianPhoneFocus(it)) }
             )
             Spacer(Modifier.height(itemSpacing))
         }
 
-        LazyListScope.item {
+        item {
             HintInputField(
                 value = state.basicInterview.specialRequests,
                 hint = "Special Requests",
@@ -311,32 +274,24 @@ fun BasicInterview(viewModel: BasicInterviewNewUpdateViewModel, snackbarHostStat
                     Log.d(TAG, "Special Requests updated to: $newValue")
                     viewModel.onEvent(BasicInterviewNewUpdateEvent.EnteredSpecialRequests(newValue))
                 },
-                onFocusChange = {
-                    viewModel.onEvent(
-                        BasicInterviewNewUpdateEvent.ChangedSpecialRequestsFocus(
-                            it
-                        )
-                    )
-                }
+                onFocusChange = { viewModel.onEvent(BasicInterviewNewUpdateEvent.ChangedSpecialRequestsFocus(it)) }
             )
             Spacer(Modifier.height(itemSpacing))
         }
 
-        LazyListScope.item {
+        item {
             Button(
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(top = itemSpacing),
                 onClick = {
-                    Log.d(
-                        TAG, "Submit Request clicked. Form values: " +
-                                "childName=${state.basicInterview.childName}, " +
-                                "age=${state.basicInterview.age}, " +
-                                "guardianName=${state.basicInterview.guardianName}, " +
-                                "guardianEmail=${state.basicInterview.guardianEmail}, " +
-                                "guardianPhone=${state.basicInterview.guardianPhone}, " +
-                                "specialRequests=${state.basicInterview.specialRequests}"
-                    )
+                    Log.d(TAG, "Submit Request clicked. Form values: " +
+                            "childName=${state.basicInterview.childName}, " +
+                            "age=${state.basicInterview.age}, " +
+                            "guardianName=${state.basicInterview.guardianName}, " +
+                            "guardianEmail=${state.basicInterview.guardianEmail}, " +
+                            "guardianPhone=${state.basicInterview.guardianPhone}, " +
+                            "specialRequests=${state.basicInterview.specialRequests}")
                     viewModel.onEvent(BasicInterviewNewUpdateEvent.SaveBasicInterview)
                 },
                 colors = ButtonDefaults.buttonColors(containerColor = Color(0xFFC5AE3D))
@@ -346,7 +301,6 @@ fun BasicInterview(viewModel: BasicInterviewNewUpdateViewModel, snackbarHostStat
         }
     }
 }
-
 
 
 

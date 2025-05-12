@@ -19,11 +19,11 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.trial_junior.feature_junior.domain.model.BasicInterviewItem
-import com.example.trial_junior.feature_junior.domain.model.SpecialInterviewItem
-import com.example.trial_junior.feature_junior.presentation.viewModels.BasicInterviewListViewModel
-import com.example.trial_junior.feature_junior.presentation.viewModels.SpecialInterviewEvent
-import com.example.trial_junior.feature_junior.presentation.viewModels.SpecialInterviewListViewModel
+import com.example.joyrides.feature_junior.domain.model.BasicInterviewItem
+import com.example.joyrides.feature_junior.domain.model.SpecialInterviewItem
+import com.example.joyrides.feature_junior.presentation.viewModels.BasicInterviewListViewModel
+import com.example.joyrides.feature_junior.presentation.viewModels.SpecialInterviewEvent
+import com.example.joyrides.feature_junior.presentation.viewModels.SpecialInterviewListViewModel
 import kotlinx.coroutines.launch
 
 @Composable

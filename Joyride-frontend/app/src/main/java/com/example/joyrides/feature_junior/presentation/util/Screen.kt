@@ -1,5 +1,6 @@
 package com.example.joyrides.feature_junior.presentation.util
 
+
 sealed class Screen(val route: String) {
     object InvitationItemListScreen: Screen("invitationItemList_screen")
     object InvitationNewUpdateScreen: Screen("invitationNewUpdate_screen")
@@ -8,6 +9,9 @@ sealed class Screen(val route: String) {
     object WishListUpdateScreen: Screen("wishList_update_screen")
 
 
+
+    object LandingScreen: Screen("landing_screen")
+    object GetStartedScreen: Screen("get_started_screen")
 
     object SignupScreen: Screen("signup_screen")
     object LoginScreen: Screen("login_screen")

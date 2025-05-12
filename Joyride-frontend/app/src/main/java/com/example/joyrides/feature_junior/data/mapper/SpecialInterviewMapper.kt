@@ -1,8 +1,8 @@
-package com.example.trial_junior.feature_junior.data.mapper
+package com.example.joyrides.feature_junior.data.mapper
 
-import com.example.trial_junior.feature_junior.data.local.dto.LocalSpecialInterviewItem
-import com.example.trial_junior.feature_junior.data.remote.dto.RemoteSpecialInterviewItem
-import com.example.trial_junior.feature_junior.domain.model.SpecialInterviewItem
+import com.example.joyrides.feature_junior.data.local.dto.LocalSpecialInterviewItem
+import com.example.joyrides.feature_junior.data.remote.dto.RemoteSpecialInterviewItem
+import com.example.joyrides.feature_junior.domain.model.SpecialInterviewItem
 
 fun SpecialInterviewItem.toLocalSpecialInterviewItem(id: Int): LocalSpecialInterviewItem {
     return LocalSpecialInterviewItem(

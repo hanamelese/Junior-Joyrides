@@ -1,5 +1,7 @@
 package com.example.joyrides.feature_junior.domain.repo
 
+import com.example.joyrides.feature_junior.domain.model.SpecialInterviewItem
+
 interface SpecialInterviewListRepo {
     suspend fun getAllSpecialInterviews(): List<SpecialInterviewItem>
     suspend fun getAllSpecialInterviewsFromLocalCache(): List<SpecialInterviewItem>

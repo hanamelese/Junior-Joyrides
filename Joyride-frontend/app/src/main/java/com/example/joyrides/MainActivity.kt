@@ -15,24 +15,24 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
-import com.example.joyrides.feature_junior.presentation.screens.AdminDashboardScreen
 import com.example.joyrides.feature_junior.presentation.screens.AdminLoginScreen
 import com.example.joyrides.feature_junior.presentation.screens.BasicInterviewScreen
-import com.example.joyrides.feature_junior.presentation.screens.EditProfileScreen
+import com.example.joyrides.feature_junior.presentation.screens.GetStartedScreen
 import com.example.joyrides.feature_junior.presentation.screens.InvitationScreen
 import com.example.joyrides.feature_junior.presentation.screens.LandingScreen
 import com.example.joyrides.feature_junior.presentation.screens.LoginScreen
 import com.example.joyrides.feature_junior.presentation.screens.PrivacyAndPolicyScreen
-import com.example.joyrides.feature_junior.presentation.screens.SignupScreen
 import com.example.joyrides.feature_junior.presentation.screens.WishListScreen
 import com.example.joyrides.feature_junior.presentation.util.Screen
 import com.example.joyrides.feature_junior.presentation.viewModels.BasicInterviewListViewModel
 import com.example.joyrides.feature_junior.presentation.viewModels.InvitationListViewModel
 import com.example.joyrides.feature_junior.presentation.viewModels.UserViewModel
 import com.example.joyrides.feature_junior.presentation.viewModels.WishListViewModel
+import com.example.joyrides.feature_junior.presentation.viewModels.SpecialInterviewListViewModel
+import com.example.joyrides.ui.theme.JoyridesTheme
+import com.example.trial_junior.feature_junior.presentation.screens.ProfileScreen
+import com.example.trial_junior.feature_junior.presentation.viewModels.SpecialInterviewListViewModel
 import com.example.trial_junior.ui.theme.JoyridesTheme
-
-
 
 
 class MainActivity : ComponentActivity() {
@@ -99,7 +99,7 @@ class MainActivity : ComponentActivity() {
                             )
                         }
                         composable(route = Screen.ProfileScreen.route) {
-                            Screen.ProfileScreen(
+                            ProfileScreen(
                                 navController = navController,
                                 userViewModel = userViewModel,
                                 invitationViewModel = invitationViewModel,
