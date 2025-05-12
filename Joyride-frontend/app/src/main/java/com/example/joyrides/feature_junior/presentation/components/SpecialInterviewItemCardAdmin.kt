@@ -14,11 +14,12 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.joyrides.feature_junior.domain.model.SpecialInterviewItem
 import com.example.trial_junior.core.presentation.components.DeleteButton
 import com.example.trial_junior.core.presentation.components.EditButton
 import com.example.trial_junior.core.presentation.components.HostedButton
-import com.example.trial_junior.feature_junior.domain.model.SpecialInterviewItem
-import com.example.trial_junior.ui.theme.TrialJuniorTheme
+import com.example.trial_junior.ui.theme.JoyridesTheme
+
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -151,7 +152,7 @@ fun SpecialInterviewItemCardAdmin(
 @Preview
 @Composable
 fun SpecialInterviewItemCardAdminPreview() {
-    TrialJuniorTheme {
+    JoyridesTheme {
         SpecialInterviewItemCardAdmin(
             specialInterview = SpecialInterviewItem(
                 childName = "Meba",

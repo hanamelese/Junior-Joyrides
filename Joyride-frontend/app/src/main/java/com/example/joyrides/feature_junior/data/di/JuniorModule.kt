@@ -21,6 +21,7 @@ import com.example.joyrides.feature_junior.domain.repo.WishListRepo
 import com.example.joyrides.feature_junior.data.repo.SpecialInterviewListRepoImpl
 
 import com.example.joyrides.feature_junior.domain.repo.SpecialInterviewListRepo
+import com.example.trial_junior.feature_junior.data.repo.SpecialInterviewListRepoImpl
 
 import dagger.Module
 import dagger.Provides

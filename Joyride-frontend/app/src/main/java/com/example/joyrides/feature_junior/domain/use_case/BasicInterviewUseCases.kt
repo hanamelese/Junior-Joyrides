@@ -1,10 +1,10 @@
 package com.example.joyrides.feature_junior.domain.use_case
 
 
+import com.example.jorides.feature_junior.domain.util.InvalidInvitationItemException
 import com.example.joyrides.core.util.UseCasesStrings
 import com.example.joyrides.feature_junior.domain.model.BasicInterviewItem
 import com.example.joyrides.feature_junior.domain.repo.BasicInterviewListRepo
-import com.example.joyrides.feature_junior.domain.util.InvalidInvitationItemException
 
 
 import javax.inject.Inject

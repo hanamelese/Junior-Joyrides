@@ -1,4 +1,4 @@
-package com.example.joyrides.feature_junior.presentation.component
+package com.example.joyrides.feature_junior.presentation.components
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Row
@@ -12,8 +12,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.sp
-import com.example.trial_junior.core.util.ContentDescriptions
-
+import com.example.joyrides.core.util.ContentDescriptions
 
 @Composable
 fun IconRow(

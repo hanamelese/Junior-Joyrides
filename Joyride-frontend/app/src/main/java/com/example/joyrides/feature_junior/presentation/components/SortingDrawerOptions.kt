@@ -1,10 +1,12 @@
-package com.example.joyrides.feature_junior.presentation.component
+package com.example.joyrides.feature_junior.presentation.components
 
 import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.NavigationDrawerItem
 import androidx.compose.runtime.Composable
-import com.example.trial_junior.core.util.ListStrings
+import com.example.joyrides.core.util.ListStrings
+import com.example.joyrides.feature_junior.domain.util.InvitationItemOrder
+import com.example.joyrides.feature_junior.domain.util.SortingDirection
 
 
 @OptIn(ExperimentalMaterial3Api::class)

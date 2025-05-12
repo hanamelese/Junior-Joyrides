@@ -50,6 +50,7 @@ import com.google.accompanist.pager.ExperimentalPagerApi
 import kotlinx.coroutines.launch
 import com.google.accompanist.pager.*
 import com.example.joyrides.feature_junior.presentation.util.Screen
+import com.example.joyrides.R
 import kotlinx.coroutines.launch
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")

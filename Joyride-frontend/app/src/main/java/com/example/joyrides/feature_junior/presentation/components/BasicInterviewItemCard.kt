@@ -1,9 +1,8 @@
-package com.example.joyrides.feature_junior.presentation.component
+package com.example.joyrides.feature_junior.presentation.components
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.layout.RowScope.weight
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
@@ -21,11 +20,10 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.joyrides.feature_junior.domain.model.BasicInterviewItem
 import com.example.trial_junior.core.presentation.components.DeleteButton
 import com.example.trial_junior.core.presentation.components.EditButton
-import com.example.trial_junior.core.presentation.components.HostedButton
-import com.example.trial_junior.feature_junior.domain.model.BasicInterviewItem
-import com.example.trial_junior.ui.theme.TrialJuniorTheme
+import com.example.trial_junior.ui.theme.JoyridesTheme
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -179,7 +177,7 @@ fun BasicInterviewItemCard(
 @Preview
 @Composable
 fun BasicInterviewItemCardPreview() {
-    TrialJuniorTheme {
+    JoyridesTheme {
         BasicInterviewItemCard(
             basicInterview = BasicInterviewItem(
                 childName = "Meba",

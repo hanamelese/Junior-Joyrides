@@ -1,18 +1,3 @@
-//package com.example.trial_junior.feature_junior.domain.model
-//
-//data class InvitationItem(
-//    val childName: String,
-//    val guardianEmail: String,
-//    val specialRequests: String,
-//    val address: String,
-//    val date: String,
-//    val time: Long,
-//    val upcoming: Boolean,
-//    val guardianPhone: Long,
-//    val age: Int,
-//    val id: Int?=null   // Optional until set by the server
-//
-//)
 
 package com.example.joyrides.feature_junior.domain.model
 

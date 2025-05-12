@@ -1,4 +1,4 @@
-package com.example.trial_junior.feature_junior.presentation.screens
+package com.example.joyrides.feature_junior.presentation.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -37,19 +37,21 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-import com.example.trial_junior.feature_junior.presentation.components.AppBottomNavigation
-import com.example.trial_junior.feature_junior.presentation.components.BarGraph
-import com.example.trial_junior.feature_junior.presentation.components.HalfScreenMenu
-import com.example.trial_junior.feature_junior.presentation.components.SharedDashboardComponents
-import com.example.trial_junior.feature_junior.presentation.components.StatisticCards
-import com.example.trial_junior.feature_junior.presentation.viewModels.BasicInterviewListViewModel
-import com.example.trial_junior.feature_junior.presentation.viewModels.InvitationListViewModel
-import com.example.trial_junior.feature_junior.presentation.viewModels.SpecialInterviewListViewModel
-import com.example.trial_junior.feature_junior.presentation.viewModels.WishListViewModel
+import com.example.joyrides.feature_junior.presentation.viewModels.BasicInterviewListViewModel
+import com.example.joyrides.feature_junior.presentation.viewModels.InvitationListViewModel
+import com.example.joyrides.feature_junior.presentation.viewModels.WishListViewModel
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.Divider
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.joyrides.feature_junior.presentation.components.AppBottomNavigation
+import com.example.joyrides.feature_junior.presentation.components.BarGraph
+import com.example.joyrides.feature_junior.presentation.components.HalfScreenMenu
+import com.example.joyrides.feature_junior.presentation.components.SharedDashboardComponents
+import com.example.joyrides.feature_junior.presentation.components.StatisticCards
+import com.example.joyrides.feature_junior.presentation.screens.BirthdayManagementScreen
+import com.example.trial_junior.feature_junior.presentation.screens.InterviewManagementScreen
+import com.example.trial_junior.feature_junior.presentation.viewModels.SpecialInterviewListViewModel
 
 @Composable
 fun AdminDashboardScreen(

@@ -3,7 +3,6 @@ package com.example.joyrides.feature_junior.presentation.screens
 import android.annotation.SuppressLint
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.layout.ColumnScope.weight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
@@ -29,17 +28,17 @@ import com.example.joyrides.core.util.ListStrings
 import com.example.joyrides.feature_junior.presentation.components.BasicInterviewItemCardAdmin
 import com.example.joyrides.feature_junior.presentation.components.InvitationItemCardAdmin
 import com.example.joyrides.feature_junior.presentation.components.SortingDrawerOptions
-import com.example.joyrides.feature_junior.presentation.components.SpecialInterviewItemCardAdmin
 import com.example.joyrides.feature_junior.presentation.components.WishlistItemCardAdmin
 import com.example.joyrides.feature_junior.presentation.util.Screen
 import com.example.joyrides.feature_junior.presentation.viewModels.BasicInterviewEvent
 import com.example.joyrides.feature_junior.presentation.viewModels.BasicInterviewListViewModel
 import com.example.joyrides.feature_junior.presentation.viewModels.InvitationListEvent
 import com.example.joyrides.feature_junior.presentation.viewModels.InvitationListViewModel
-import com.example.joyrides.feature_junior.presentation.viewModels.SpecialInterviewEvent
-import com.example.joyrides.feature_junior.presentation.viewModels.SpecialInterviewListViewModel
 import com.example.joyrides.feature_junior.presentation.viewModels.WishListEvent
 import com.example.joyrides.feature_junior.presentation.viewModels.WishListViewModel
+import com.example.trial_junior.feature_junior.presentation.components.SpecialInterviewItemCardAdmin
+import com.example.trial_junior.feature_junior.presentation.viewModels.SpecialInterviewEvent
+import com.example.trial_junior.feature_junior.presentation.viewModels.SpecialInterviewListViewModel
 import kotlinx.coroutines.launch
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
