@@ -1,4 +1,4 @@
-package com.example.trial_junior.feature_junior.presentation.screens
+package com.example.joyrides.feature_junior.presentation.screens
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.Canvas
@@ -8,6 +8,7 @@ import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.ColumnScope.weight
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -51,6 +52,7 @@ import kotlinx.coroutines.launch
 import com.google.accompanist.pager.*
 import com.example.trial_junior.R
 import com.example.trial_junior.feature_junior.presentation.util.Screen
+import kotlinx.coroutines.launch
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalPagerApi::class)
@@ -92,39 +94,47 @@ fun GetStartedScreen(navController: NavHostController) {
                         modifier = Modifier.fillMaxSize().alpha(0.8f)
                     )
                     Column(
-                        modifier = Modifier.fillMaxSize().padding(horizontal = 24.dp, vertical = 48.dp),
+                        modifier = Modifier.fillMaxSize()
+                            .padding(horizontal = 24.dp, vertical = 48.dp),
                         horizontalAlignment = Alignment.CenterHorizontally,
                         verticalArrangement = Arrangement.Bottom
                     ) {
                         Text(
                             text = titles[page],
-                            style = TextStyle(fontSize = 24.sp, fontWeight = FontWeight.Bold, color = Color.White),
+                            style = TextStyle(
+                                fontSize = 24.sp,
+                                fontWeight = FontWeight.Bold,
+                                color = Color.White
+                            ),
                             modifier = Modifier.padding(bottom = 8.dp)
                         )
                         Text(
                             text = descriptions[page],
-                            style = TextStyle(fontSize = 16.sp, color = Color.White.copy(alpha = 0.8f)),
+                            style = TextStyle(
+                                fontSize = 16.sp,
+                                color = Color.White.copy(alpha = 0.8f)
+                            ),
                             modifier = Modifier.padding(bottom = 32.dp)
                         )
                         Button(
-                onClick = { navController.navigate(Screen.SignupScreen.route) },
-                colors = ButtonDefaults.buttonColors(containerColor = brandColor),
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(56.dp)
-                    .clip(RoundedCornerShape(16.dp)),
-                elevation = ButtonDefaults.buttonElevation(
-                    defaultElevation = 4.dp,
-                    pressedElevation = 8.dp
-                )
-            ) {
-                Text(
-                    text = "Get Started",
-                    fontSize = 18.sp,
-                    color = Color.White,
-                    fontWeight = FontWeight.SemiBold
-                )
-            }
+                            onClick = { navController.navigate(Screen.SignupScreen.route) },
+                            colors = ButtonDefaults.buttonColors(containerColor = brandColor),
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .height(56.dp)
+                                .clip(androidx.compose.foundation.shape.RoundedCornerShape(16.dp)),
+                            elevation = ButtonDefaults.buttonElevation(
+                                defaultElevation = 4.dp,
+                                pressedElevation = 8.dp
+                            )
+                        ) {
+                            Text(
+                                text = "Get Started",
+                                fontSize = 18.sp,
+                                color = Color.White,
+                                fontWeight = FontWeight.SemiBold
+                            )
+                        }
 
                     }
                 }
@@ -140,9 +150,11 @@ fun GetStartedScreen(navController: NavHostController) {
                             .width(if (index == pagerState.currentPage) 20.dp else 10.dp)
                             .padding(end = if (index == backgroundImages.size - 1) 0.dp else 5.dp)
                             .height(10.dp)
-                            .clip(RoundedCornerShape(10.dp))
+                            .clip(androidx.compose.foundation.shape.RoundedCornerShape(10.dp))
                             .background(
-                                if (index == pagerState.currentPage) Color.Yellow else Color.Yellow.copy(alpha = 0.5f)
+                                if (index == pagerState.currentPage) Color.Yellow else Color.Yellow.copy(
+                                    alpha = 0.5f
+                                )
                             )
                     )
                 }
