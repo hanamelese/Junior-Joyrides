@@ -30,6 +30,10 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import com.example.joyrides.feature_junior.presentation.component.AppBottomNavigation
+import com.example.joyrides.feature_junior.presentation.component.HalfScreenMenu
+import com.example.joyrides.feature_junior.presentation.component.HintInputField
+import com.example.joyrides.feature_junior.presentation.util.Screen
 import com.example.trial_junior.feature_junior.presentation.components.AppBottomNavigation
 import com.example.trial_junior.feature_junior.presentation.components.HintInputField
 import com.example.trial_junior.feature_junior.presentation.components.HalfScreenMenu
