@@ -5,8 +5,6 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.NavigationDrawerItem
 import androidx.compose.runtime.Composable
 import com.example.trial_junior.core.util.ListStrings
-import com.example.trial_junior.feature_junior.domain.util.InvitationItemOrder
-import com.example.trial_junior.feature_junior.domain.util.SortingDirection
 
 
 @OptIn(ExperimentalMaterial3Api::class)
