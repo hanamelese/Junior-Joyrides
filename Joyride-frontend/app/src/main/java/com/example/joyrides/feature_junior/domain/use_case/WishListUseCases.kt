@@ -1,6 +1,6 @@
 package com.example.joyrides.feature_junior.domain.use_case
 
-import com.example.jorides.feature_junior.domain.util.InvalidInvitationItemException
+import com.example.joyrides.feature_junior.domain.util.InvalidInvitationItemException
 import com.example.joyrides.feature_junior.domain.model.WishListItem
 import com.example.joyrides.feature_junior.domain.repo.WishListRepo
 import com.example.joyrides.core.util.UseCasesStrings

@@ -23,12 +23,12 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
-import com.example.trial_junior.feature_junior.presentation.components.AppBottomNavigation
-import com.example.trial_junior.feature_junior.presentation.components.HalfScreenMenu
-import com.example.trial_junior.feature_junior.presentation.util.Screen
-import com.example.trial_junior.feature_junior.presentation.viewModels.Invitation_Update.InvitationNewUpdateEvent
-import com.example.trial_junior.feature_junior.presentation.viewModels.Invitation_Update.InvitationNewUpdateViewModel
-import com.example.trial_junior.feature_junior.presentation.components.HintInputField
+import com.example.joyrides.feature_junior.presentation.components.AppBottomNavigation
+import com.example.joyrides.feature_junior.presentation.components.HalfScreenMenu
+import com.example.joyrides.feature_junior.presentation.util.Screen
+import com.example.joyrides.feature_junior.presentation.viewModels.Invitation_Update.InvitationNewUpdateEvent
+import com.example.joyrides.feature_junior.presentation.viewModels.Invitation_Update.InvitationNewUpdateViewModel
+import com.example.joyrides.feature_junior.presentation.components.HintInputField
 import java.util.Calendar
 import java.util.Locale
 

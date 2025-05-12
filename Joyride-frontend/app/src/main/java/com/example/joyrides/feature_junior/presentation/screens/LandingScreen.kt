@@ -37,8 +37,8 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.lifecycle.compose.LocalLifecycleOwner
 import androidx.navigation.NavHostController
-import com.example.trial_junior.feature_junior.presentation.components.AppBottomNavigation
-import com.example.trial_junior.feature_junior.presentation.components.HalfScreenMenu
+import com.example.joyrides.feature_junior.presentation.components.AppBottomNavigation
+import com.example.joyrides.feature_junior.presentation.components.HalfScreenMenu
 import com.example.trial_junior.R
 import kotlinx.coroutines.launch
 

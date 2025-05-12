@@ -1,4 +1,4 @@
-package com.example.trial_junior.core.presentation.components
+package com.example.joyrides.core.presentation.components
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.layout.fillMaxSize
@@ -20,7 +20,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.unit.dp
-import com.example.trial_junior.core.util.ContentDescriptions
+import com.example.joyrides.core.util.ContentDescriptions
 
 
 @Composable

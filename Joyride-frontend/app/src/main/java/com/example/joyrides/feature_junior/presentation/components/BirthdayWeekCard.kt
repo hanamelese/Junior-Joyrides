@@ -13,8 +13,8 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.trial_junior.R
-import com.example.trial_junior.feature_junior.presentation.screens.WishListItem
-import com.example.trial_junior.feature_junior.presentation.viewModels.WishListViewModel
+import com.example.joyrides.feature_junior.presentation.screens.WishListItem
+import com.example.joyrides.feature_junior.presentation.viewModels.WishListViewModel
 import java.text.SimpleDateFormat
 import java.util.*
 import androidx.compose.foundation.Image

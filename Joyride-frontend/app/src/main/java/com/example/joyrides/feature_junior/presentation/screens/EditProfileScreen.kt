@@ -60,12 +60,12 @@ import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import coil.compose.rememberAsyncImagePainter
-import com.example.joyrides.R
 import com.example.joyrides.feature_junior.presentation.components.AppBottomNavigation
 import com.example.joyrides.feature_junior.presentation.components.HalfScreenMenu
 import com.example.joyrides.feature_junior.presentation.util.Screen
 import com.example.joyrides.feature_junior.presentation.viewModels.UserUiEvent
 import com.example.joyrides.feature_junior.presentation.viewModels.UserViewModel
+import com.example.trial_junior.R
 import kotlinx.coroutines.flow.collectLatest
 
 @Composable

@@ -1,9 +1,9 @@
-package com.example.trial_junior.core.presentation.components
+package com.example.joyrides.core.presentation.components
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
-import com.example.trial_junior.feature_junior.domain.model.InvitationItem
+import com.example.joyrides.feature_junior.domain.model.InvitationItem
 
 
 data class ItemColors(

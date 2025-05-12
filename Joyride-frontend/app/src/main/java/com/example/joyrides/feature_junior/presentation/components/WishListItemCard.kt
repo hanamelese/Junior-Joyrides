@@ -17,8 +17,8 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.joyrides.feature_junior.domain.model.WishListItem
-import com.example.trial_junior.core.presentation.components.DeleteButton
-import com.example.trial_junior.core.presentation.components.EditButton
+import com.example.joyrides.core.presentation.components.DeleteButton
+import com.example.joyrides.core.presentation.components.EditButton
 import com.example.trial_junior.ui.theme.JoyridesTheme
 
 

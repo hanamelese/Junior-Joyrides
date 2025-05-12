@@ -55,9 +55,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
-import com.example.trial_junior.feature_junior.presentation.util.Screen
-import com.example.trial_junior.feature_junior.presentation.viewModels.UserState
-import com.example.trial_junior.feature_junior.presentation.viewModels.UserViewModel
+import com.example.joyrides.feature_junior.presentation.util.Screen
+import com.example.joyrides.feature_junior.presentation.viewModels.UserState
+import com.example.joyrides.feature_junior.presentation.viewModels.UserViewModel
 
 @Composable
 fun LoginScreen(navController: NavHostController, viewModel: UserViewModel = hiltViewModel()) {

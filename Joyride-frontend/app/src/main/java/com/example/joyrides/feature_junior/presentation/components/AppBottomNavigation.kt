@@ -27,7 +27,7 @@ import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
-import com.example.trial_junior.feature_junior.presentation.util.Screen
+import com.example.joyrides.feature_junior.presentation.util.Screen
 import androidx.compose.foundation.border
 import androidx.compose.foundation.shape.RoundedCornerShape
 

@@ -25,9 +25,9 @@ import com.example.joyrides.feature_junior.presentation.components.AppBottomNavi
 import com.example.joyrides.feature_junior.presentation.components.HalfScreenMenu
 import com.example.joyrides.feature_junior.presentation.components.HintInputField
 import com.example.joyrides.feature_junior.presentation.util.Screen
-import com.example.trial_junior.feature_junior.presentation.viewModels.BasicInterview_Update.BasicInterviewNewUpdateEvent
+import com.example.joyrides.feature_junior.presentation.viewModels.BasicInterview_Update.BasicInterviewNewUpdateEvent
 
-import com.example.trial_junior.feature_junior.presentation.viewModels.BasicInterview_Update.BasicInterviewNewUpdateViewModel
+import com.example.joyrides.feature_junior.presentation.viewModels.BasicInterview_Update.BasicInterviewNewUpdateViewModel
 import kotlinx.coroutines.flow.collectLatest
 
 @Composable

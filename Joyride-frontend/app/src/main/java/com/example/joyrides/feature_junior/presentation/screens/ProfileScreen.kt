@@ -54,28 +54,28 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.NavHostController
 import coil.compose.rememberAsyncImagePainter
 import com.example.trial_junior.R
-import com.example.trial_junior.core.util.ContentDescriptions
-import com.example.trial_junior.feature_junior.domain.model.BasicInterviewItem
-import com.example.trial_junior.feature_junior.domain.model.InvitationItem
-import com.example.trial_junior.feature_junior.domain.model.SpecialInterviewItem
-import com.example.trial_junior.feature_junior.domain.model.WishListItem
-import com.example.trial_junior.feature_junior.presentation.components.AppBottomNavigation
-import com.example.trial_junior.feature_junior.presentation.components.BasicInterviewItemCard
-import com.example.trial_junior.feature_junior.presentation.components.InvitationItemCard
-import com.example.trial_junior.feature_junior.presentation.components.HalfScreenMenu
+import com.example.joyrides.core.util.ContentDescriptions
+import com.example.joyrides.feature_junior.domain.model.BasicInterviewItem
+import com.example.joyrides.feature_junior.domain.model.InvitationItem
+import com.example.joyrides.feature_junior.domain.model.SpecialInterviewItem
+import com.example.joyrides.feature_junior.domain.model.WishListItem
+import com.example.joyrides.feature_junior.presentation.components.AppBottomNavigation
+import com.example.joyrides.feature_junior.presentation.components.BasicInterviewItemCard
+import com.example.joyrides.feature_junior.presentation.components.InvitationItemCard
+import com.example.joyrides.feature_junior.presentation.components.HalfScreenMenu
+import com.example.joyrides.feature_junior.presentation.components.WishlistItemCard
+import com.example.joyrides.feature_junior.presentation.util.Screen
+import com.example.joyrides.feature_junior.presentation.viewModels.BasicInterviewEvent
+import com.example.joyrides.feature_junior.presentation.viewModels.BasicInterviewListViewModel
+import com.example.joyrides.feature_junior.presentation.viewModels.InvitationListEvent
+import com.example.joyrides.feature_junior.presentation.viewModels.InvitationListViewModel
+import com.example.joyrides.feature_junior.presentation.viewModels.UserUiEvent
+import com.example.joyrides.feature_junior.presentation.viewModels.UserViewModel
+import com.example.joyrides.feature_junior.presentation.viewModels.WishListEvent
+import com.example.joyrides.feature_junior.presentation.viewModels.WishListViewModel
 import com.example.trial_junior.feature_junior.presentation.components.SpecialInterviewItemCard
-import com.example.trial_junior.feature_junior.presentation.components.WishlistItemCard
-import com.example.trial_junior.feature_junior.presentation.util.Screen
-import com.example.trial_junior.feature_junior.presentation.viewModels.BasicInterviewEvent
-import com.example.trial_junior.feature_junior.presentation.viewModels.BasicInterviewListViewModel
-import com.example.trial_junior.feature_junior.presentation.viewModels.InvitationListEvent
-import com.example.trial_junior.feature_junior.presentation.viewModels.InvitationListViewModel
 import com.example.trial_junior.feature_junior.presentation.viewModels.SpecialInterviewEvent
 import com.example.trial_junior.feature_junior.presentation.viewModels.SpecialInterviewListViewModel
-import com.example.trial_junior.feature_junior.presentation.viewModels.UserUiEvent
-import com.example.trial_junior.feature_junior.presentation.viewModels.UserViewModel
-import com.example.trial_junior.feature_junior.presentation.viewModels.WishListEvent
-import com.example.trial_junior.feature_junior.presentation.viewModels.WishListViewModel
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
@@ -273,7 +273,7 @@ fun ProfileScreen(
                             )
                         }
                         is SpecialInterviewItem -> {
-                            SpecialInterviewItemCard(
+                            SpecialInterviewItemCard (
                                 specialInterview = item,
                                 modifier = Modifier
                                     .fillMaxWidth()

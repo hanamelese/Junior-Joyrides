@@ -50,8 +50,7 @@ import com.google.accompanist.pager.ExperimentalPagerApi
 import kotlinx.coroutines.launch
 import com.google.accompanist.pager.*
 import com.example.joyrides.feature_junior.presentation.util.Screen
-import com.example.joyrides.R
-import kotlinx.coroutines.launch
+
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @OptIn(ExperimentalPagerApi::class)
@@ -121,7 +120,7 @@ fun GetStartedScreen(navController: NavHostController) {
                             modifier = Modifier
                                 .fillMaxWidth()
                                 .height(56.dp)
-                                .clip(androidx.compose.foundation.shape.RoundedCornerShape(16.dp)),
+                                .clip(RoundedCornerShape(16.dp)),
                             elevation = ButtonDefaults.buttonElevation(
                                 defaultElevation = 4.dp,
                                 pressedElevation = 8.dp
@@ -149,7 +148,7 @@ fun GetStartedScreen(navController: NavHostController) {
                             .width(if (index == pagerState.currentPage) 20.dp else 10.dp)
                             .padding(end = if (index == backgroundImages.size - 1) 0.dp else 5.dp)
                             .height(10.dp)
-                            .clip(androidx.compose.foundation.shape.RoundedCornerShape(10.dp))
+                            .clip(RoundedCornerShape(10.dp))
                             .background(
                                 if (index == pagerState.currentPage) Color.Yellow else Color.Yellow.copy(
                                     alpha = 0.5f
