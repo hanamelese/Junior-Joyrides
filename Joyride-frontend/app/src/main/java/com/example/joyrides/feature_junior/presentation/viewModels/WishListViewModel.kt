@@ -2,11 +2,15 @@ package com.example.joyrides.feature_junior.presentation.viewModels
 
 import androidx.compose.runtime.State
 import androidx.lifecycle.viewModelScope
-import com.example.trial_junior.core.util.ListStrings
-import com.example.trial_junior.feature_junior.data.di.IoDispatcher
-import com.example.trial_junior.feature_junior.domain.model.WishListItem
-import com.example.trial_junior.feature_junior.domain.use_case.WishListUseCases
-import com.example.trial_junior.feature_junior.domain.use_case.WishListUseCaseResult
+import com.example.joyrides.core.util.ListStrings
+import com.example.joyrides.feature_junior.data.di.IoDispatcher
+import com.example.joyrides.feature_junior.domain.model.WishListItem
+import com.example.joyrides.feature_junior.domain.use_case.WishListUseCases
+import com.example.joyrides.feature_junior.domain.use_case.WishListUseCaseResult
+import com.example.trial_junior.feature_junior.presentation.viewModels.ListEvent
+import com.example.trial_junior.feature_junior.presentation.viewModels.ListState
+import com.example.trial_junior.feature_junior.presentation.viewModels.ListUseCaseResult
+import com.example.trial_junior.feature_junior.presentation.viewModels.ListViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import kotlinx.coroutines.Job

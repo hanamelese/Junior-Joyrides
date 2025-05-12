@@ -2,8 +2,8 @@ package com.example.joyrides.feature_junior.presentation.viewModels
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.trial_junior.feature_junior.domain.model.UserItem
-import com.example.trial_junior.feature_junior.domain.use_case.UserUseCases
+import com.example.joyrides.feature_junior.domain.model.UserItem
+import com.example.joyrides.feature_junior.domain.use_case.UserUseCases
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.MutableStateFlow

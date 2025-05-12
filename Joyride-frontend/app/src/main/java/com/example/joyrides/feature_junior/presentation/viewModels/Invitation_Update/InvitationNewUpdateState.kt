@@ -1,6 +1,6 @@
 package com.example.joyrides.feature_junior.presentation.viewModels.Invitation_Update
 
-import com.example.trial_junior.feature_junior.domain.model.InvitationItem
+import com.example.joyrides.feature_junior.domain.model.InvitationItem
 
 data class InvitationNewUpdateState(
     val isChildNameHintVisible: Boolean = true,

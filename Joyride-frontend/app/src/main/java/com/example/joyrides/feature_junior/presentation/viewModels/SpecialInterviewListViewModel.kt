@@ -1,11 +1,11 @@
 package com.example.trial_junior.feature_junior.presentation.viewModels
 
 import androidx.compose.runtime.State
-import com.example.trial_junior.core.util.ListStrings
-import com.example.trial_junior.feature_junior.data.di.IoDispatcher
-import com.example.trial_junior.feature_junior.domain.model.SpecialInterviewItem
-import com.example.trial_junior.feature_junior.domain.use_case.SpecialInterviewUseCases
-import com.example.trial_junior.feature_junior.domain.use_case.SpecialInterviewUseCaseResult
+import com.example.joyrides.core.util.ListStrings
+import com.example.joyrides.feature_junior.data.di.IoDispatcher
+import com.example.joyrides.feature_junior.domain.model.SpecialInterviewItem
+import com.example.joyrides.feature_junior.domain.use_case.SpecialInterviewUseCases
+import com.example.joyrides.feature_junior.domain.use_case.SpecialInterviewUseCaseResult
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import javax.inject.Inject

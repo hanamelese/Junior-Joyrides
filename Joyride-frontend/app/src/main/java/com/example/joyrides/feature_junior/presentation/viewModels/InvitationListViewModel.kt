@@ -2,13 +2,17 @@ package com.example.joyrides.feature_junior.presentation.viewModels
 
 import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
-import com.example.trial_junior.core.util.ListStrings
-import com.example.trial_junior.feature_junior.data.di.IoDispatcher
-import com.example.trial_junior.feature_junior.domain.model.InvitationItem
-import com.example.trial_junior.feature_junior.domain.use_case.InvitationUseCaseResult
-import com.example.trial_junior.feature_junior.domain.use_case.InvitationUseCases
-import com.example.trial_junior.feature_junior.domain.util.InvitationItemOrder
-import com.example.trial_junior.feature_junior.domain.util.SortingDirection
+import com.example.joyrides.core.util.ListStrings
+import com.example.joyrides.feature_junior.data.di.IoDispatcher
+import com.example.joyrides.feature_junior.domain.model.InvitationItem
+import com.example.joyrides.feature_junior.domain.use_case.InvitationUseCaseResult
+import com.example.joyrides.feature_junior.domain.use_case.InvitationUseCases
+import com.example.joyrides.feature_junior.domain.util.InvitationItemOrder
+import com.example.joyrides.feature_junior.domain.util.SortingDirection
+import com.example.trial_junior.feature_junior.presentation.viewModels.ListEvent
+import com.example.trial_junior.feature_junior.presentation.viewModels.ListState
+import com.example.trial_junior.feature_junior.presentation.viewModels.ListUseCaseResult
+import com.example.trial_junior.feature_junior.presentation.viewModels.ListViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.CoroutineDispatcher
 import javax.inject.Inject

@@ -1,6 +1,6 @@
-package com.example.trial_junior.feature_junior.presentation.viewModels.BasicInterview_Update
+package com.example.joyrides.feature_junior.presentation.viewModels.BasicInterview_Update
 
-import com.example.trial_junior.feature_junior.domain.model.BasicInterviewItem
+import com.example.joyrides.feature_junior.domain.model.BasicInterviewItem
 
 data class BasicInterviewNewUpdateState(
     val isChildNameHintVisible: Boolean = true,
