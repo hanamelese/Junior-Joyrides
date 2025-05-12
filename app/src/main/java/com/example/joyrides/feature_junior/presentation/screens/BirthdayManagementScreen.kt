@@ -186,9 +186,9 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
-import com.example.trial_junior.feature_junior.presentation.components.WeekNavigator
-import com.example.trial_junior.feature_junior.presentation.viewModels.InvitationListViewModel
-import com.example.trial_junior.feature_junior.presentation.viewModels.WishListViewModel
+import com.example.joyrides.feature_junior.presentation.components.WeekNavigator
+import com.example.joyrides.feature_junior.presentation.viewModels.InvitationListViewModel
+import com.example.joyrides.feature_junior.presentation.viewModels.WishListViewModel
 
 @Composable
 fun BirthdayManagementScreen(
