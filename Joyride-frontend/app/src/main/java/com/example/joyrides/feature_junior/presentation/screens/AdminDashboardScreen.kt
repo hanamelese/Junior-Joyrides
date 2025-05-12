@@ -1,4 +1,4 @@
-package com.example.joyrides.feature_junior.presentation.screens
+package com.example.trial_junior.feature_junior.presentation.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -37,21 +37,19 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.trial_junior.feature_junior.presentation.components.AppBottomNavigation
+import com.example.trial_junior.feature_junior.presentation.components.BarGraph
+import com.example.trial_junior.feature_junior.presentation.components.HalfScreenMenu
+import com.example.trial_junior.feature_junior.presentation.components.SharedDashboardComponents
+import com.example.trial_junior.feature_junior.presentation.components.StatisticCards
+import com.example.trial_junior.feature_junior.presentation.viewModels.BasicInterviewListViewModel
+import com.example.trial_junior.feature_junior.presentation.viewModels.InvitationListViewModel
 import com.example.trial_junior.feature_junior.presentation.viewModels.SpecialInterviewListViewModel
+import com.example.trial_junior.feature_junior.presentation.viewModels.WishListViewModel
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Menu
-import androidx.compose.foundation.verticalScroll
-import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material3.Divider
 import androidx.compose.ui.tooling.preview.Preview
-import com.example.joyrides.feature_junior.presentation.component.AppBottomNavigation
-import com.example.joyrides.feature_junior.presentation.component.BarGraph
-import com.example.joyrides.feature_junior.presentation.component.HalfScreenMenu
-import com.example.joyrides.feature_junior.presentation.component.SharedDashboardComponents
-import com.example.joyrides.feature_junior.presentation.component.StatisticCards
-import com.example.joyrides.feature_junior.presentation.viewModels.BasicInterviewListViewModel
-import com.example.joyrides.feature_junior.presentation.viewModels.InvitationListViewModel
-import com.example.joyrides.feature_junior.presentation.viewModels.WishListViewModel
 
 @Composable
 fun AdminDashboardScreen(
@@ -111,25 +109,23 @@ fun AdminDashboardScreen(
                     .padding(innerPadding)
             ) {
                 Column(
-                    modifier = Modifier
-                        .background(Color.White)
-                        .fillMaxSize()
-                        .padding(vertical = 16.dp)
-                        .verticalScroll(rememberScrollState()),
-                    horizontalAlignment = Alignment.CenterHorizontally,
-                    verticalArrangement = Arrangement.spacedBy(8.dp)
+                    modifier = Modifier.fillMaxSize()
                 ) {
-                    Spacer(modifier = Modifier.height(16.dp))
-                    Text(
-                        text = "Admin",
-                        style = TextStyle(
-                            fontSize = MaterialTheme.typography.headlineSmall.fontSize,
-                            fontWeight = FontWeight.Bold
-                        ),
+                    // Fixed top content
+                    Row(
                         modifier = Modifier
-                            .align(Alignment.Start)
-                            .padding(bottom = 5.dp, start = 16.dp)
-                    )
+                            .fillMaxWidth()
+                            .padding(start = 16.dp, bottom = 5.dp),
+                        horizontalArrangement = Arrangement.Start
+                    ) {
+                        Text(
+                            text = "Admin",
+                            style = TextStyle(
+                                fontSize = MaterialTheme.typography.headlineSmall.fontSize,
+                                fontWeight = FontWeight.Bold
+                            )
+                        )
+                    }
                     Divider(
                         color = Color.Black,
                         thickness = 1.dp,
@@ -137,13 +133,11 @@ fun AdminDashboardScreen(
                             .padding(vertical = 8.dp)
                             .padding(0.dp)
                     )
-                    // Reintroduce SharedDashboardComponents for "Admin Dashboard" and time range selector
-                    SharedDashboardComponents (
+                    SharedDashboardComponents(
                         onTimeRangeSelected = { range ->
                             // Handle time range selection if needed
                         }
                     )
-                    // Navigation section: "Birthday Management" and "Interview Management"
                     ManagementSection { selectedSection ->
                         currentScreen = selectedSection
                         when (selectedSection) {
@@ -155,14 +149,16 @@ fun AdminDashboardScreen(
                             }
                         }
                     }
-                    Spacer(modifier = Modifier.height(8.dp))
+
+                    // Scrollable content starting from StatisticCards
                     LazyColumn(
                         modifier = Modifier
-                            .fillMaxWidth()
-                            .weight(1f)
+                            .fillMaxSize()
+                            .padding(top = 8.dp), // Adjust top padding to align with previous spacing
+                        horizontalAlignment = Alignment.CenterHorizontally,
+                        verticalArrangement = Arrangement.spacedBy(8.dp)
                     ) {
                         item {
-                            // StatisticCards with white background
                             StatisticCards(
                                 usersCount = 1234,
                                 eventsCount = 156,
@@ -172,38 +168,45 @@ fun AdminDashboardScreen(
                         }
                         item {
                             Spacer(modifier = Modifier.height(10.dp))
-                            // Weekly Activities Report (using BarGraph with percentage data)
+                        }
+                        item {
                             Text(
                                 text = "Weekly Activities Report",
                                 fontSize = 18.sp,
                                 fontWeight = FontWeight.SemiBold,
                                 modifier = Modifier.padding(top = 16.dp, start = 26.dp)
                             )
+                        }
+                        item {
                             Row(
-                                modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp).padding(start = 6.dp),
+                                modifier = Modifier.fillMaxWidth().padding(horizontal = 10.dp).padding(start = 6.dp),
                                 horizontalArrangement = Arrangement.Center
                             ) {
                                 BarGraph(
-//                                    modifier = Modifier
-//                                        .height(250.dp),
                                     data = barGraphData
                                 )
                             }
                         }
                         item {
-                            Spacer(modifier = Modifier.height(6.dp))
-                            // NavHost content
-                            NavHost(navController = localNavController, startDestination = "interviewManagement") {
-                                composable("interviewManagement") {
-                                    InterviewManagementScreen(Modifier)
-                                }
-                                composable("birthdayManagement") {
-                                    BirthdayManagementScreen(Modifier)
+                            Spacer(modifier = Modifier.height(2.dp))
+                        }
+                        item {
+                            Box(modifier = Modifier.fillMaxWidth()) {
+                                NavHost(navController = localNavController, startDestination = "interviewManagement") {
+                                    composable("interviewManagement") {
+                                        InterviewManagementScreen(
+                                            modifier = Modifier.fillMaxWidth()
+                                        )
+                                    }
+                                    composable("birthdayManagement") {
+                                        BirthdayManagementScreen(
+                                            modifier = Modifier.fillMaxWidth()
+                                        )
+                                    }
                                 }
                             }
                         }
                         item {
-                            // Add some padding at the bottom for better scrolling experience
                             Spacer(modifier = Modifier.height(8.dp))
                         }
                     }
@@ -229,7 +232,7 @@ fun AdminDashboardScreen(
 
         // Side Menu (higher z-index to overlay everything)
         if (isMenuOpen) {
-            HalfScreenMenu (
+            HalfScreenMenu(
                 navController = navController,
                 isMenuOpen = remember { mutableStateOf(isMenuOpen) },
                 modifier = Modifier.zIndex(2f),
@@ -259,7 +262,7 @@ fun ManagementSection(onSectionSelected: (String) -> Unit = {}) {
             }
         )
 
-        // Interview Management
+        // Birthday Management
         ManagementItem(
             title = "Interview Management",
             isSelected = selected == "Interview Management",
@@ -308,4 +311,5 @@ fun AdminDashboardScreenPreview() {
         specialInterviewViewModel = hiltViewModel()
     )
 }
+
 
